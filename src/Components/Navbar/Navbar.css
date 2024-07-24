@@ -1,0 +1,48 @@
+ul li{
+    list-style: none;
+}
+ul li a{
+ text-decoration: none !important;
+}
+.nav-link ,.navbar-brand{
+    color: white;
+    font-family: "Enriqueta", serif !important;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px;
+    cursor: pointer;
+}
+.navbar-brand{
+    margin-left: 6%;
+}
+.nav-link:hover{
+    color: white;
+    cursor: pointer;
+}
+.navbar-brand:hover{
+    color: white;
+}
+.active {
+    color:  #FFBD39 !important;
+    position: relative;
+    margin: 12px;
+    font-family: "Enriqueta", serif;
+    cursor: pointer;
+}
+.active::after{
+    content: "";
+    position: absolute;
+    background-color: #FFBD39;
+    height: 2px;
+    width: 90%;
+    left: 2px;
+    bottom: -3px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.navbar{
+    z-index: 9999999999999999999;
+}
